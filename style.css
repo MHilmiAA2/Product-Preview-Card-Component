@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: #f2ebe3;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+main {
+    background-color: #fff;
+    display: grid;
+    grid-template-columns: 1fr;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    max-width: 30rem;
+}
+
+main div.image {
+    background-image: url(images/image-product-mobile.jpg);
+    min-height: 300px;
+    background-position: center;
+    background-size: cover;
+}
+
+main div.desc {
+    padding-inline: 2rem;
+}
+
+main div.desc p.tag {
+    text-transform: uppercase;
+    color: #6c7289;
+    letter-spacing: 0.2rem;
+    font-size: 0.6rem;
+    margin-top: 1.5rem;
+}
+
+main div.desc h1.title {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 1.5rem;
+}
+
+main div.desc p.desc {
+    font-size: 0.7rem;
+    color: #6c7289;
+}
+
+main div.desc div.price {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+main div.desc div.price p.discount {
+    font-size: 1.8rem;
+    margin: 0;
+    font-weight: 700;
+    color: #3c8067;
+}
+
+main div.desc div.price p.realprice {
+    font-size: 0.8rem;
+    color: #6c7289;
+}
+
+main div.desc div.btn {
+    background-color: #3c8067;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: #fff;
+    margin-block: 1rem;
+    border-radius: 0.5rem;
+    font-weight: 700;
+    transition: all 0.2s;
+    cursor: pointer;
+}
+
+main div.desc div.btn:hover {
+    background-color: #1b4133;
+}
+
+main div.desc div.btn img {
+    height: 1rem;
+}
+
+@media (min-width: 375px) {
+    main {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    main div.image {
+        background-image: url(images/image-product-desktop.jpg);
+    }
+}
